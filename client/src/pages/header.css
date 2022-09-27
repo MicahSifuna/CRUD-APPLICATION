@@ -1,0 +1,10 @@
+.header {
+    color: rgb(120, 189, 213);
+}
+.adult img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
