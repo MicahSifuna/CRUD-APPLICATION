@@ -26,7 +26,7 @@ const View = () => {
                 <br />
 
                 <strong>Name: </strong>
-                <span>{user.fname}</span>
+                <span>{user.name}</span>
                 <br />
                 <br />
 

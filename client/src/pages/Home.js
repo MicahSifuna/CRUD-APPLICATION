@@ -44,7 +44,7 @@ const Home = () => {
                     return(
                         <tr key={item.id}>
                             <th scope='row' >{index+1}</th>
-                            <td>{item.fname}</td>
+                            <td>{item.name}</td>
                             <td>{item.email}</td>
                             <td>{item.contact}</td>
                             <td>

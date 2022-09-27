@@ -27,7 +27,7 @@ app.get('/api/get', (req, res) => {
 
 app.post('/api/post', (req, res) => {
     const {name, email, contact} = req.body;
-    const sqlInsert = "INSERT INTO contact_db (fname, email, contact) VALUES (?, ?, ?)";
+    const sqlInsert = "INSERT INTO contact_db (name, email, contact) VALUES (?, ?, ?)";
     db.query(sqlInsert, [name, email, contact], (error, result) => {
         if(error) {
             console.log(error);
@@ -59,7 +59,7 @@ app.get('/api/get/:id', (req, res) => {
 app.put('/api/update/:id', (req, res) => {
     const {id} = req.params;
     const {name, email, contact} = req.body;
-    const sqlUpdate = "UPDATE contact_db SET fname = ?, email = ?, contact = ? WHERE id = ? ";
+    const sqlUpdate = "UPDATE contact_db SET name = ?, email = ?, contact = ? WHERE id = ? ";
     db.query(sqlUpdate, [name,email,contact,id], (error, result) => {
         if (error) {
             console.log(error);

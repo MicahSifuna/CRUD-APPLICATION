@@ -69,11 +69,11 @@ const AddEdit = () => {
         }}
         onSubmit={handleSubmit}
         >
-            <label htmlFor='name'>Name</label>
+            <label htmlFor='name'>name</label>
             <input type="text"
             id='name'
             name='name'
-            placeholder='Your Name...'
+            placeholder='Your name...'
             value={name || ""}
             onChange={handleInputChange}
             />
