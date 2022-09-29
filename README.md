@@ -33,5 +33,13 @@ Full Stack WEB CRUD Application
         <br>
             4. The next step is to submit the data. This data is then added to the Frontend Website. to add this to the database,
             you need to execute the data in the MySQL workbench and it will be added to the database or use any other software to execute.
+            <br>
+            5. You can also delete the data in the database. This is simply done by clicking
+            on the delete button, you will be prompted to confirm whether you really wnt to delete the information or not, in the frontend,
+            You can still execute the code in the MySQL workbench to delete the data.
+            <br>
+            6. You can also edit the data in the database by clicking on the edit button. You will see the update page shown bellow.
+            <br>
+            <img src="https://github.com/MicahSifuna/CRUD-APPLICATION/blob/main/Screenshot%20(300).png" alt="">
         </p>
     </div>
