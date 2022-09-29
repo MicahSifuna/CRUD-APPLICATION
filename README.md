@@ -1,7 +1,6 @@
 # CRUD-APPLICATION
 Full Stack WEB CRUD Application
 <h1>CRUD APP</h1>
-<h2>Create Read Update Delete.</h2>
 <img src="Screenshot (299).png" alt="">
 
 <h1>Hello and welcome to My Github repository</h1>
@@ -42,5 +41,17 @@ Full Stack WEB CRUD Application
             6. You can also edit the data in the database by clicking on the edit button. You will see the update page shown bellow.
             <br>
             <img src="https://github.com/MicahSifuna/CRUD-APPLICATION/blob/main/Screenshot%20(300).png" alt="">
+    <h3>
+        The following is the code sample for post API
+    </h3>
+    app.post('/api/post', (req, res) => {
+    const {name, email, contact} = req.body;
+    const sqlInsert = "INSERT INTO contact_db (name, email, contact) VALUES (?, ?, ?)";
+    db.query(sqlInsert, [name, email, contact], (error, result) => {
+        if(error) {
+            console.log(error);
+        }
+    });
+});
         </p>
     </div>
